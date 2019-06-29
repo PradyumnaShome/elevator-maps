@@ -1,0 +1,13 @@
+{
+  "name": "elevator-maps",
+  "version": "1.0.0",
+  "description": "Navigate to your preferred floor in each Salesforce building.",
+  "main": "js/index.js",
+  "repository": "https://github.com/PradyumnaShome/elevator-maps",
+  "author": "Pradyumna Shome <pradyumna.shome@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "pure": "^2.85.0"
+  }
+}

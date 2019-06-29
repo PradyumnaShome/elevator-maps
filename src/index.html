@@ -1,0 +1,73 @@
+<html>
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+      integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+      crossorigin="anonymous"
+    />
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <main>
+      <h1>
+        Elevator Maps
+      </h1>
+      <h3>
+        Pradyumna Shome
+      </h3>
+      <section class="pure-g">
+        <div class="pure-u-1-2 from">
+          <section>
+            <h2>From</h2>
+            <div class="slide-container">
+              <input
+                type="range"
+                min="1"
+                max="61"
+                value="1"
+                class="slider"
+                id="slider-from"
+                oninput="onSliderAdjust(event)"
+              />
+              <p class="slider-value" id="slider-from-value">1</p>
+            </div>
+          </section>
+        </div>
+        <div class="pure-u-1-2 to">
+          <section>
+            <h2>Destination</h2>
+            <div class="slide-container">
+              <input
+                type="range"
+                min="1"
+                max="61"
+                value="1"
+                class="slider"
+                id="slider-to"
+                oninput="onSliderAdjust(event)"
+              />
+              <p class="slider-value" id="slider-to-value">1</p>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="pure-g">
+        <div class="pure-u-1-1 path">
+          <section>
+            <h2>Directions</h2>
+            <p>
+              Location
+              <select id="location-selector" onchange="findDirections()">
+                <option name="West">West</option>
+                <option name="East">East</option>
+                <option name="Tower">Tower</option>
+              </select>
+            </p>
+            <section id="directions-view"></section>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
